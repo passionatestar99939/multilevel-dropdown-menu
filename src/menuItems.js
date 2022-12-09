@@ -1,57 +1,110 @@
 export const menuItems = [
   {
-    title: 'Home',
-    url: '/',
-  },
-  {
-    title: 'Services',
-    url: '/services',
+    title: "Sort by",
+    url: "/",
     submenu: [
       {
-        title: 'web design',
-        url: 'web-design',
-      },
-      {
-        title: 'web development',
-        url: 'web-dev',
+        title: "Revenue Generated",
         submenu: [
           {
-            title: 'Frontend',
-            url: 'frontend',
+            title: "Highest first",
           },
           {
-            title: 'Backend',
-            submenu: [
-              {
-                title: 'NodeJS',
-                url: 'node',
-              },
-              {
-                title: 'PHP',
-                url: 'php',
-              },
-            ],
+            title: "Lowest first",
           },
         ],
       },
       {
-        title: 'SEO',
-        url: 'seo',
+        title: "Most Recent Feferral",
+        submenu: [
+          {
+            title: "Newest first",
+          },
+          {
+            title: "Oldest first",
+          },
+        ],
       },
     ],
   },
   {
-    title: 'About',
-    url: '/about',
+    title: "Filter by",
     submenu: [
       {
-        title: 'Who we are',
-        url: 'who-we-are',
+        title: "All pending payouts",
       },
       {
-        title: 'Our values',
-        url: 'our-values',
+        title: "Ready Payouts",
+      },
+      {
+        title: "No Leaks",
       },
     ],
   },
-];
+  {
+    title: "Actions",
+    submenu: [
+      { title: "Mark as paid" },
+      { title: "Reject" },
+      { title: "Send payouts" },
+    ],
+  },
+]
+
+// export const menuItems = [
+//   {
+//     title: 'Home',
+//     url: '/',
+//   },
+//   {
+//     title: 'Services',
+//     url: '/services',
+//     submenu: [
+//       {
+//         title: 'web design',
+//         url: 'web-design',
+//       },
+//       {
+//         title: 'web development',
+//         url: 'web-dev',
+//         submenu: [
+//           {
+//             title: 'Frontend',
+//             url: 'frontend',
+//           },
+//           {
+//             title: 'Backend',
+//             submenu: [
+//               {
+//                 title: 'NodeJS',
+//                 url: 'node',
+//               },
+//               {
+//                 title: 'PHP',
+//                 url: 'php',
+//               },
+//             ],
+//           },
+//         ],
+//       },
+//       {
+//         title: 'SEO',
+//         url: 'seo',
+//       },
+//     ],
+//   },
+//   {
+//     title: 'About',
+//     url: '/about',
+//     submenu: [
+//       {
+//         title: 'Who we are',
+//         url: 'who-we-are',
+//       },
+//       {
+//         title: 'Our values',
+//         url: 'our-values',
+//       },
+//     ],
+//   },
+// ];
